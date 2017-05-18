@@ -5,6 +5,8 @@ application up and running.
 
 Things you may want to cover:
 
+* First app whit ruby on rails
+
 * Ruby version
 
 * System dependencies
