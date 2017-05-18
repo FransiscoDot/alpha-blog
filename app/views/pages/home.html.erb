@@ -1,0 +1,53 @@
+<DOCTYPE! html>
+<head>
+	<title>Ruby on rails site</title>
+	<meta name="viewport" content="width=device, intial-scale=1">
+	<link href="cssRails.css" rel="stylesheet" type="text/css">
+	<style>
+	*{
+	  margin: 0;
+	  padding: 0;
+	  font-family:sans-serif;
+	}
+	.body{
+		width:100%;
+	}
+	.rubyLogo {
+		width: 5.5%;
+		height: 108%;
+		padding: 0 3%;
+	}
+	.navbar {
+		background-color:#EEEEEE;
+		border-bottom: 0.5px solid gray;
+		height:80px;
+	}
+	.navBarUl {
+		display: inline-flex;
+		list-style-type: none;
+		float:right;
+	}
+	.navBarLi {
+		padding: 31px 44px;
+		height:25px
+	}
+	.navBarLi:hover{
+		background-color: white;
+		border-bottom: 2px solid #eb5745;
+		color: #eb5745;
+		font-size: 27px;
+	}
+	</style>
+</head>
+	<div class="navbar">
+        <img class="rubyLogo" <%= image_tag 'rubyLogo.jpg'%>
+		<ul class="navBarUl">
+			<li class="navBarLi">Home</li>
+			<li class="navBarLi">Where</li>
+        <%= link_to about_path do %>
+			<li class="navBarLi" onclick="">About</li>
+        <% end %>
+		</ul>
+	</div>
+	<div>
+<html>
